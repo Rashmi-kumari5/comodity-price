@@ -1,5 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(312.25deg, #FFC4BC 0%,     rgba(255, 255, 255, 0) 66.19%);
+    z-index: -1;
+    /* background: url(https://images.unsplash.com/photo-1568738351265-c7065f5d4293?w=900) 50%/ cover; */
+  
 }
 
 p{
@@ -357,7 +361,7 @@ footer{
     
   }
 
-  #myChart{
+  /* #myChart{
     background: #fff;
     font-family: Montserrat, sans-serif;;
     font-size: 24px;
@@ -376,4 +380,4 @@ footer{
       inset #bfecf7 0 0 0 22px;
     text-shadow: 3px 3px 1px #bfecf7;
   
-  }
+  } */
