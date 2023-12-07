@@ -94,7 +94,7 @@ p{
 .introduction img{
     padding: 0 80px;
     float: right;
-    /* width: 35%; */
+    width: 47%;
 }
 
 .select-commodity{
@@ -230,6 +230,7 @@ footer{
 .overview-text{
     padding: 4%;
     font-family: "Times New Roman", Times, serif;
+    font-size: large;
 }
 
 .containerr h1{
@@ -323,13 +324,16 @@ footer{
   }
   
   .news-text {
-    font-size: 30px;
+    font-size: 25px;
     font-size: 600;
     width: 100%;
     text-align: center;
     position: absolute;
     bottom: 20px;
-    color: green;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: bisque;
+    text-decoration: underline;
   }
 
   .news-container {
@@ -339,5 +343,13 @@ footer{
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    float: left;
     background-color: #f9f9f9;
+  }
+
+  .news-t{
+    margin: 0 0 0 850px;
+    font-family: "Times New Roman", Times, serif;
+    padding: 6%;
+    font-size: large;
   }
