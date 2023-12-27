@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,21 +10,21 @@
 <body>
     <div class="navbarr">
         <div class="logo">
-          <img src="picture/logo.png" alt="logo" />
-          <h3>
-            <p>Commodity Price Prediction</p>
-          </h3>
+            <img src="picture/logo.png" alt="logo" />
+            <h3>
+                <p>Commodity Price Prediction</p>
+            </h3>
         </div>
-    
+
         <div class="nav">
             <a href="Prediction.html">Prediction Page</a>
             <a href="About.html">About Us</a>
             <a href="admin.html">Admin Page</a>
             <a href="contact.html">Contact Us</a>
-      
-          </div>
-      </div>
-      
+
+        </div>
+    </div>
+
     <div class="container">
         <h1>Commodity Prediction Form</h1>
         <form id="predictionForm">
@@ -36,16 +35,17 @@
             <div class="input-group">
                 <label for="timePeriod">Time Period:</label>
                 <select id="timePeriod" name="timePeriod">
-                  <option value="" hidden>Select Time Period</option>
-                    <option value="6 months">6 Months</option>
+                    <option value="" hidden>Select Time Period</option>
+                    <!-- <option value="6 months">6 Months</option> -->
                     <option value="1 year">1 Year</option>
+                    <option value="3 years">3 Years</option>
                     <option value="5 years">5 Years</option>
                 </select>
             </div>
             <div class="input-group">
                 <label for="modelNo">Model Number</label>
-                <select id="modelNo" name="modelNo"> 
-                  <option value="" hidden>Select Model Number</option>
+                <select id="modelNo" name="modelNo">
+                    <option value="" hidden>Select Model Number</option>
                     <option value="1">Model 1</option>
                     <option value="2">Model 2</option>
                     <option value="3">Model 3</option>
@@ -54,11 +54,1032 @@
             </div>
             <br>
             <div class="button-group">
-              <button type="submit">Predict</button>
-              <button id="downloadButton">Download Data</button>
-          </div>
+                <button type="submit">Predict</button>
+                <button id="downloadButton">Download Data</button>
+            </div>
         </form>
     </div>
+    <br><br>
+    <div class="commodity-info">
+        <div class="ci">
+            <u>
+                <center>
+                    <h1>Commodity Information</h1>
+                </center>
+            </u>
+
+        </div>
+        <br>
+        <br>
+        <div class="gold-summary">
+            <h1>Gold Insights</h1>
+
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Price Analysis</h2>
+                    <ul>
+                        <li>Historical price analysis using technical indicators like lag indicators (1, 3, 5, 9, 21,
+                            100, 200 days), SMA, EMA (5, 10, 20, 100, 200 days), MACD, HV, and STD.</li>
+                        <li>Volatility observed in shorter-term indicators while longer-term trends indicated by 100 and
+                            200-day moving averages.</li>
+                        <li>Considered a safe-haven asset, often displaying price increases during economic
+                            uncertainties, geopolitical tensions, or inflationary periods.</li>
+                        <li>Inverse correlation with the Dollar Index.</li>
+                        <li>Fluctuations influenced by central bank policies, global economic conditions, and investor
+                            sentiment.</li>
+                        <li>Hedge against inflation and currency devaluation.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlations</h2>
+                    <ul>
+                        <li>Inverse Relationship with Dollar Index</li>
+                        <li>Inverse Correlation with Bond Yields</li>
+                        <li>Positive Correlation with Geopolitical Tensions</li>
+                        <li>Inflation Hedge</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Factors Influencing Prices</h2>
+                    <ul>
+                        <li>Central Bank Policies</li>
+                        <li>Investor Sentiment</li>
+                        <li>Global Economic Conditions</li>
+                        <li>Inflation and Currency Fluctuations</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Market Behavior</h2>
+                    <ul>
+                        <li>Short-term volatility and longer-term trends</li>
+                        <li>Considered a "safe-haven" asset</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="img">
+                <img src="/picture/gold.jpeg" alt="error">
+
+            </div>
+
+        </div>
+
+
+        <br>
+        <br>
+
+        <div class="gold-summary">
+            <h1>Natural Gas Insights</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Historical Price Analysis</h2>
+                    <ul>
+                        <li>Historical price analysis using lag indicators (1, 3, 5, 9, 21, 100, 200 days) reveals price
+                            trends and patterns.</li>
+                        <li>Examination of Simple Moving Average (SMA) and Exponential Moving Average (EMA) (5, 10, 20,
+                            100, 200 days) to understand short-term and long-term trends.</li>
+                        <li>Application of technical indicators such as MACD, Historical Volatility (HV), and Standard
+                            Deviation (STD) to identify momentum and volatility.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Market Influences</h2>
+                    <ul>
+                        <li>Dependency on weather patterns: Weather conditions, particularly during winter months,
+                            significantly impact natural gas demand for heating purposes.</li>
+                        <li>Geopolitical events: Political tensions in major gas-producing regions or disruptions in
+                            supply routes affect prices.</li>
+                        <li>Energy market dynamics: Natural gas prices can be influenced by changes in oil prices,
+                            global energy demand, and supply levels.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Demand and Supply Factors</h2>
+                    <ul>
+                        <li>Seasonal variations: Demand surges during colder months and declines in warmer seasons,
+                            affecting prices.</li>
+                        <li>Production levels: Changes in production due to technological advancements or regulatory
+                            factors impact supply and, subsequently, prices.</li>
+                        <li>Storage levels: Inventory levels in storage facilities affect short-term pricing,
+                            particularly during high-demand seasons.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlation of Natural Gas</h2>
+                    <ul>
+                        <li>Inter-Commodity Correlations: Correlation with related energy commodities like WTI Crude and
+                            Brent Crude.</li>
+                        <li>Inverse correlation with renewable energy commodities like solar or wind energy might exist
+                            due to competing energy sources.</li>
+                        <li>Correlation with Economic Indicators: Correlation with the Dollar Index and Bond Yields.
+                        </li>
+                        <li>Market Specific Correlations: Seasonal correlation and correlations due to geopolitical
+                            events.</li>
+                        <li>Cross-Market Correlations: Possible correlations with broader energy indices or sectors.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="img">
+                <img src="/picture/4 - Copy.png" alt="error">
+
+            </div>
+
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="gold-summary">
+            <h1>WTI Crude Insights</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Price Trends</h2>
+                    <ul>
+                        <li>Historical analysis using lag indicators, SMA, EMA, MACD, HV, and STD to identify price
+                            trends.</li>
+                        <li>Sensitivity to geopolitical events, OPEC decisions, global demand, and supply dynamics.</li>
+                        <li>Consideration of WTI Crude's specific market behavior compared to other crude oil benchmarks
+                            like Brent Crude.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Influencing Factors</h2>
+                    <ul>
+                        <li>Dependency on global economic conditions, particularly industrial production and energy
+                            demand.</li>
+                        <li>Impact of geopolitical tensions, conflicts in oil-producing regions, and trade policies
+                            affecting supply chains.</li>
+                        <li>Effects of inventory levels, production disruptions, and technological advancements in the
+                            oil industry.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Market Sensitivity</h2>
+                    <ul>
+                        <li>WTI Crude's correlation with broader market indices and sectors.</li>
+                        <li>Indicator role or sensitivity to economic trends.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlation with Other Commodities and Economic Indicators</h2>
+                    <ul>
+                        <li>Analysis of WTI Crude's price movements and their correlation with other commodities in the
+                            dataset.</li>
+                        <li>Identification of commodities moving in tandem with or inversely to WTI Crude due to shared
+                            market drivers or supply-demand dynamics.</li>
+                        <li>Assessment of WTI Crude's relationship with economic indicators like the Dollar Index and
+                            Bond Yields.</li>
+                        <li>Exploration of how WTI Crude prices correlate with broader market indices, currencies, or
+                            sectors.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="/picture/6.png" alt="error">
+
+            </div>
+
+
+        </div>
+
+
+        <br>
+        <br>
+
+        <div class="gold-summary">
+            <h1>Soybeans Insights</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Historical Price Analysis</h2>
+                    <ul>
+                        <li>Soybean prices exhibit cyclical patterns influenced by planting, growing, and harvesting
+                            seasons.</li>
+                        <li>Vulnerable to weather conditions (such as droughts or excessive rains) impacting crop
+                            yields.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Technical Analysis</h2>
+                    <ul>
+                        <li>Lag indicators, SMA, EMA, MACD, HV, and STD used to analyze price movements.</li>
+                        <li>Moving averages and trend indicators (like MACD) help identify potential buy/sell signals.
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Market Influences</h2>
+                    <ul>
+                        <li>Global demand from industries (food, animal feed, biofuels) and trade relations impact
+                            prices.</li>
+                        <li>Government policies, agricultural reports, and crop forecasts significantly affect soybean
+                            prices.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlations of Soybeans</h2>
+                    <ul>
+                        <li>Positive correlations with other agricultural commodities like corn and wheat due to similar
+                            agricultural influences and demand from related industries.</li>
+                        <li>Moderate correlation with the Dollar Index, as changes in the dollar’s strength can affect
+                            soybean exports and prices.</li>
+                        <li>Moderate inverse correlation with Bond Yields, where higher yields might indicate lower
+                            demand for commodities like soybeans as investors move toward bonds.</li>
+                        <li>Some correlation with broader equity markets during periods of economic uncertainty, as
+                            investors might seek safer assets like agricultural commodities.</li>
+                        <li>High sensitivity to weather conditions, especially during critical growth stages, impacting
+                            supply and influencing price volatility.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/picture/8.png" alt="error">
+
+            </div>
+        </div>
+
+
+        <br>
+        <div class="gold-summary">
+            <h1>Summary of Corn</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Price Determinants</h2>
+                    <ul>
+                        <li>Supply and Demand Dynamics: Influenced by factors affecting supply (weather conditions, crop
+                            yields, planting trends) and demand (domestic and international consumption, biofuel
+                            production).</li>
+                        <li>Weather Conditions: Adverse weather during planting or harvesting seasons can significantly
+                            impact corn production and prices.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Market Influences</h2>
+                    <ul>
+                        <li>Ethanol Demand: Sensitive to changes in biofuel demand and government policies promoting
+                            renewable energy.</li>
+                        <li>Livestock Feed Demand: Fluctuations in livestock populations and consumption patterns affect
+                            corn demand.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Global Trade and Policies</h2>
+                    <ul>
+                        <li>Trade Relations and Tariffs: Changes impact corn prices between major producing and
+                            consuming countries.</li>
+                        <li>Government Subsidies and Regulations: Influence corn supply and prices.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlation of Corn</h2>
+                    <ul>
+                        <li>Soybeans: Positive correlation due to similar cycles and weather impact; used
+                            interchangeably in animal feed.</li>
+                        <li>Wheat: Not as closely correlated but can influence corn prices, especially in regions where
+                            they're used interchangeably.</li>
+                        <li>Ethanol Demand (related to crude oil prices): Some correlation with crude oil prices.</li>
+                        <li>Dollar Index and Bond Yields: Influences from the strength of the dollar and changes in bond
+                            yields.</li>
+                        <li>Weather Conditions: Highly responsive, creating correlations with other agricultural
+                            commodities.</li>
+                        <li>Trade Policies and Government Subsidies: Changes affecting corn exports or subsidies
+                            correlate with market movements.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/picture/9.png" alt="error">
+
+            </div>
+        </div>
+
+
+        <br><br>
+
+        <div class="gold-summary">
+            <h1>Summary of Zinc</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Usage and Market Influence</h2>
+                    <ul>
+                        <li>Zinc is essential in industries such as construction, automotive, infrastructure, and
+                            electronics.</li>
+                        <li>Its primary use in galvanization for steel production makes it sensitive to changes in
+                            construction and manufacturing activities.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Price Determinants</h2>
+                    <ul>
+                        <li>Factors influencing zinc prices include global economic growth, industrial production,
+                            supply-demand dynamics, and currency fluctuations.</li>
+                        <li>Supply disruptions due to mine closures or expansions and demand shifts affect prices
+                            significantly.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Technical Analysis</h2>
+                    <ul>
+                        <li>Analyzing zinc prices involves lag indicators, SMA, EMA, MACD, HV, and STD to predict future
+                            price movements.</li>
+                        <li>Trends are affected by both short-term market sentiment and longer-term supply-demand
+                            fundamentals.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Market Sensitivity</h2>
+                    <ul>
+                        <li>Zinc prices are sensitive to changes in global GDP growth, especially in emerging economies.
+                        </li>
+                        <li>Market sentiment, inventory levels, and trade policies also impact price fluctuations.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlation of Zinc</h2>
+                    <ul>
+                        <li>Zinc shows positive correlations with other industrial metals like copper, aluminum, and
+                            nickel due to shared industrial applications.</li>
+                        <li>It may also have some correlation with other commodities influenced by construction and
+                            infrastructure demand, like certain agricultural commodities and energy resources.</li>
+                        <li>Correlations might exist between zinc prices and economic indicators such as manufacturing
+                            PMIs, changes in bond yields, and the Dollar Index.</li>
+                        <li>Zinc might have correlations with broader market indices reflecting global economic health
+                            and industrial activity.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/picture/12.png" alt="error">
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="gold-summary">
+            <h1>Summary of Copper</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Price Analysis of Copper</h2>
+                    <ul>
+                        <li>Historical analysis using lag indicators, SMA, EMA, MACD, HV, and STD.</li>
+                        <li>Copper prices are sensitive to industrial demand, especially in sectors like construction,
+                            electronics, and infrastructure.</li>
+                        <li>Market influenced by global economic growth, supply disruptions, and technological
+                            advancements affecting usage.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Supply and Demand Dynamics</h2>
+                    <ul>
+                        <li>Supply affected by mine production, labor strikes, geopolitical tensions in major
+                            copper-producing countries like Chile and Peru.</li>
+                        <li>Demand driven by construction projects, electrical wiring, electronics manufacturing, and
+                            renewable energy sectors.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Geopolitical and Economic Influences</h2>
+                    <ul>
+                        <li>Geopolitical tensions, trade policies, and infrastructure spending influence copper prices.
+                        </li>
+                        <li>Market reactions to economic indicators like manufacturing PMI, GDP growth, and global trade
+                            developments impact demand and prices.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlation of Copper</h2>
+                    <ul>
+                        <li>Strong correlation with other industrial metals like Aluminum, Zinc, and Nickel due to
+                            similar usage in industries.</li>
+                        <li>Moderate correlation with oil prices (WTI, Brent) due to shared influence from global
+                            economic conditions.</li>
+                        <li>Positively correlated with economic growth indicators like manufacturing activity,
+                            construction spending, and GDP growth.</li>
+                        <li>Exhibits correlations with broader equity markets and bond yields, especially in relation to
+                            inflation and interest rates.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/picture/10.png" alt="error">
+
+            </div>
+        </div>
+
+        <br><br>
+        <div class="gold-summary">
+            <h1>Summary of Aluminium</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Price Analysis</h2>
+                    <ul>
+                        <li>Aluminium is a widely used industrial metal in construction, transportation, packaging, and
+                            electronics.</li>
+                        <li>Historical price analysis using lag indicators, SMA, EMA, MACD, HV, and STD to identify
+                            trends.</li>
+                        <li>Market sensitivity to manufacturing trends, global economic growth, and supply-demand
+                            dynamics.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Key Influencing Factors</h2>
+                    <ul>
+                        <li>Industrial Demand: Closely linked to economic activities, especially in manufacturing and
+                            infrastructure sectors.</li>
+                        <li>Supply Dynamics: Affected by production levels, global supply chains, and geopolitical
+                            factors impacting major producers.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Technical Indicators</h2>
+                    <ul>
+                        <li>Lag indicators, moving averages (SMA, EMA), MACD, HV, and STD used to predict future price
+                            movements.</li>
+                        <li>Analysis of long-term trends (200-day and 100-day) alongside short-term indicators to
+                            understand price fluctuations.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>External Factors Impacting Prices</h2>
+                    <ul>
+                        <li>Trade Policies: Tariffs, trade disputes, and sanctions significantly impact global aluminium
+                            prices due to its international trade exposure.</li>
+                        <li>Environmental Policies: Regulations affecting energy use and emissions in aluminium
+                            production can influence prices.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlations Involving Aluminium</h2>
+                    <ul>
+                        <li>Analysis of how aluminium prices correlate with other commodities in the dataset (such as
+                            Copper, Zinc, Nickel).</li>
+                        <li>Assessing correlations between aluminium prices and economic indicators (like Bond Yields,
+                            Dollar Index).</li>
+                        <li>Exploration of correlations between aluminium prices and broader market indices or sectors.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/picture/11.png" alt="error">
+
+            </div>
+        </div>
+
+        <br><br>
+        <div class="gold-summary">
+            <h1>Summary of Nickel</h1>
+            <div class="summary-container">
+                <div class="section">
+                    <h2>Price Analysis</h2>
+                    <ul>
+                        <li>Historical price analysis using lag indicators (1, 3, 5, 9, 21, 100, 200 days).</li>
+                        <li>Evaluation of SMA, EMA (5, 10, 20, 100, 200 days), MACD, HV, and STD.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Influencing Factors</h2>
+                    <ul>
+                        <li>Industrial Demand: Key component in stainless steel production and various industrial
+                            applications.</li>
+                        <li>Supply Dynamics: Changes in mining production, geopolitical factors, and global trade
+                            policies affect supply.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Market Sensitivity</h2>
+                    <ul>
+                        <li>Vulnerability to Economic Cycles: Highly sensitive to economic growth cycles, particularly
+                            in manufacturing and construction sectors.</li>
+                        <li>Demand from Emerging Markets: Growth in developing economies influences demand for
+                            industrial metals like nickel.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Correlation Analysis of Nickel</h2>
+                    <ul>
+                        <li>Relationship with Other Metals: Correlations with other industrial metals like copper, zinc,
+                            and aluminium.</li>
+                        <li>Correlation with GDP Growth and Trade Policies.</li>
+                        <li>Inflation Sensitivity and Currency Fluctuations.</li>
+                        <li>Supply and Demand Factors, especially demand from the Electric Vehicle (EV) industry.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/picture/11.png" alt="error">
+
+            </div>
+        </div>
+
+        <br><br>
+        <!-- Summary of Wheat -->
+        <div class="gold-summary">
+            <h1>Summary of Wheat</h1>
+            <div class="summary-container">
+                <!-- Historical Price Analysis -->
+                <div class="section">
+                    <h2>Historical Price Analysis</h2>
+                    <ul>
+                        <li>Analyzed using lag indicators (1, 3, 5, 9, 21, 100, 200 days), SMA, EMA, MACD, HV, and STD.
+                        </li>
+                        <li>Considered seasonal patterns, weather conditions, global demand-supply dynamics, and
+                            government policies impacting wheat production and trade.</li>
+                    </ul>
+                </div>
+                <!-- Market Influences -->
+                <div class="section">
+                    <h2>Market Influences</h2>
+                    <ul>
+                        <li>Wheat prices are influenced by weather conditions during planting, growing, and harvesting
+                            seasons, affecting crop yields.</li>
+                        <li>Global demand for wheat as a staple food, including its use in food production, livestock
+                            feed, and biofuel, impacts prices.</li>
+                        <li>Government policies such as subsidies, trade tariffs, and regulations can affect wheat
+                            prices and international trade.</li>
+                    </ul>
+                </div>
+                <!-- Technical Indicators -->
+                <div class="section">
+                    <h2>Technical Indicators</h2>
+                    <ul>
+                        <li>Short-term and long-term moving averages (SMA and EMA) provide insights into trend
+                            directions and potential reversal points.</li>
+                        <li>MACD helps identify momentum changes, while HV and STD indicate volatility levels.</li>
+                    </ul>
+                </div>
+                <!-- Seasonal Variations -->
+                <div class="section">
+                    <h2>Seasonal Variations</h2>
+                    <ul>
+                        <li>Wheat prices often exhibit seasonal patterns due to planting and harvesting cycles.</li>
+                        <li>Weather variations and crop reports during key growth stages significantly impact market
+                            sentiment and prices.</li>
+                    </ul>
+                </div>
+                <!-- Correlation Analysis for Wheat -->
+                <div class="section">
+                    <h2>Correlation Analysis for Wheat</h2>
+                    <ul>
+                        <li>Inter-Commodity Correlations:
+                            <ul>
+                                <li>Analyze how wheat price changes correlate with other commodities in the dataset
+                                    (such as corn, soybeans, etc.).</li>
+                                <li>Identify commodities that move similarly due to shared agricultural factors or
+                                    market influences.</li>
+                            </ul>
+                        </li>
+                        <li>Correlation with Economic Indicators:
+                            <ul>
+                                <li>Assess the correlation between wheat prices and economic indicators (like Bond
+                                    Yields, Dollar Index).</li>
+                                <li>Determine how economic conditions and currency strength influence wheat prices.</li>
+                            </ul>
+                        </li>
+                        <li>Cross-Market Correlations:
+                            <ul>
+                                <li>Explore correlations between wheat prices and broader market indices or sectors
+                                    (such as equity markets or currencies).</li>
+                                <li>Understand how shifts in these broader markets impact wheat prices and vice versa.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Correlation with Weather Patterns:
+                            <ul>
+                                <li>Evaluate the correlation between wheat prices and historical weather data during
+                                    crucial growth stages.</li>
+                                <li>Assess how weather variations affect wheat production and consequently, prices.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="/picture/11.png" alt="error">
+
+            </div>
+
+        </div>
+
+
+        <br><br>
+        <!-- Summary of Sugar -->
+        <div class="sugar-summary">
+            <h1>Summary of Sugar</h1>
+            <div class="summary-container">
+                <!-- Price Analysis -->
+                <div class="section">
+                    <h2>Price Analysis</h2>
+                    <ul>
+                        <li>Historical price analysis of sugar using lag indicators, moving averages (SMA, EMA), MACD,
+                            historical volatility (HV), and standard deviation (STD).</li>
+                        <li>Consideration of seasonal factors, weather conditions (e.g., impact on crop yields), and
+                            global supply-demand dynamics.</li>
+                    </ul>
+                </div>
+                <!-- Market Influences -->
+                <div class="section">
+                    <h2>Market Influences</h2>
+                    <ul>
+                        <li>Sugar prices are influenced by supply-side factors such as weather disruptions (droughts,
+                            floods), disease outbreaks affecting crops, and agricultural policies in major producing
+                            countries.</li>
+                        <li>Demand-side influences include changes in consumer preferences, global population growth,
+                            and the use of sugar in various industries like food and beverage production,
+                            pharmaceuticals, and biofuels.</li>
+                        <li>Global Trade and Regulations:
+                            <ul>
+                                <li>Sugar markets are impacted by trade policies, tariffs, and regulations governing
+                                    imports and exports in major producing and consuming countries.</li>
+                                <li>Changes in trade agreements, government subsidies, and tariffs can affect sugar
+                                    prices significantly.</li>
+                            </ul>
+                        </li>
+                        <li>Competition and Substitutes:
+                            <ul>
+                                <li>Sugar faces competition from alternative sweeteners (like high-fructose corn syrup,
+                                    stevia, and artificial sweeteners) which can affect its demand and pricing.</li>
+                                <li>Changes in the availability or prices of these substitutes may impact sugar's market
+                                    dynamics.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Correlation of Sugar with Other Commodities -->
+                <div class="section">
+                    <h2>Correlation of Sugar with Other Commodities</h2>
+                    <ul>
+                        <li>Agricultural Commodities:
+                            <ul>
+                                <li>Positive correlation with other agricultural commodities like corn and soybeans due
+                                    to shared agricultural factors (weather conditions, planting seasons) and usage in
+                                    food production.</li>
+                                <li>Inverse correlation with some substitutes (e.g., high-fructose corn syrup) might
+                                    exist, affecting price movements.</li>
+                            </ul>
+                        </li>
+                        <li>Currency and Economic Indicators:
+                            <ul>
+                                <li>Partial correlation with the Dollar Index: A stronger dollar might make sugar more
+                                    expensive for buyers in other currencies, potentially impacting demand and prices.
+                                </li>
+                                <li>Partial correlation with Bond Yields: Changes in interest rates might influence
+                                    sugar prices indirectly through their effects on broader economic conditions.</li>
+                            </ul>
+                        </li>
+                        <li>Global Trade and Macroeconomic Trends:
+                            <ul>
+                                <li>Correlation with global economic growth: Increased economic activity often boosts
+                                    demand for sugar in various industries, positively influencing prices.</li>
+                                <li>Correlation with geopolitical events and trade policies: Changes in trade agreements
+                                    or geopolitical tensions in major sugar-producing regions can affect supply and
+                                    prices.</li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>Commodity Market Trends:</h2>
+                    <ul>
+                        <li>Correlations with broader commodity market trends: Sugar prices might be influenced by
+                            overall trends in commodity markets, especially agricultural and soft commodities.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="/picture/13.png" alt="error">
+
+            </div>
+
+
+
+
+        </div>
+
+        <br><br>
+
+        <div class="gold-summary">
+            <h1>Summary of Coffee</h1>
+            <div class="summary-container">
+                <!-- Technical Analysis -->
+                <div class="section">
+                    <h2>Technical Analysis</h2>
+                    <ul>
+                        <li>Historical price analysis using lag indicators, SMA, EMA, MACD, HV, and STD.</li>
+                        <li>Seasonal patterns considered due to crop cycles and weather impact on coffee production.
+                        </li>
+                        <li>Market factors include supply chain disruptions, weather conditions in major producing
+                            regions (Brazil, Vietnam), and shifts in consumer preferences.</li>
+                    </ul>
+                </div>
+                <!-- Market Dynamics -->
+                <div class="section">
+                    <h2>Market Dynamics</h2>
+                    <ul>
+                        <li>Coffee is traded as Arabica and Robusta varieties, each with distinct market factors.</li>
+                        <li>Influenced by global demand from major consumers like the United States, Europe, and
+                            emerging markets.</li>
+                        <li>Currency fluctuations, especially in coffee-producing countries, can affect pricing.</li>
+                        <li>Factors Impacting Prices:
+                            <ul>
+                                <li>Weather conditions: Frost, excessive rain, droughts can affect crop yields and
+                                    quality.</li>
+                                <li>Political instability: Issues like labor strikes or government policies in major
+                                    producing countries can disrupt supply chains.</li>
+                                <li>Demand trends: Shifts in consumer preferences, health trends, or emerging coffee
+                                    markets influence prices.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Correlation Analysis of Coffee with Other Factors -->
+                <div class="section">
+                    <h2>Correlation Analysis of Coffee with Other Factors</h2>
+                    <ul>
+                        <li>Inter-Commodity Correlations:
+                            <ul>
+                                <li>Analysis of how coffee prices correlate with other commodities (e.g., sugar, cocoa)
+                                    in the dataset.</li>
+                                <li>Possible correlations due to shared agricultural factors or demand trends in related
+                                    industries.</li>
+                            </ul>
+                        </li>
+                        <li>Correlation with Economic Indicators:
+                            <ul>
+                                <li>Assessing coffee price correlations with economic indicators like the Dollar Index
+                                    or Bond Yields.</li>
+                                <li>Understanding how economic factors impact coffee prices, especially considering
+                                    currency fluctuations in producing countries.</li>
+                            </ul>
+                        </li>
+                        <li>Cross-Market Correlations:
+                            <ul>
+                                <li>Examination of correlations between coffee prices and broader market indices or
+                                    sectors.</li>
+                                <li>Analysis of how shifts in equity markets, consumer behavior, or macroeconomic
+                                    conditions influence coffee prices.</li>
+                            </ul>
+                        </li>
+                        <li>Global Supply Chain Impact:
+                            <ul>
+                                <li>Exploration of correlations between coffee prices and shipping/freight costs,
+                                    considering the global nature of coffee trade.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/picture/14.png" alt="error">
+
+            </div>
+        </div>
+
+        <br><br>
+        <!-- Summary of Cotton -->
+        <div class="gold-summary">
+            <h1>Summary of Cotton</h1>
+            <div class="summary-container">
+                <!-- Historical Price Analysis -->
+                <div class="section">
+                    <h2>Historical Price Analysis</h2>
+                    <ul>
+                        <li>Analysis conducted using lag indicators (1, 3, 5, 9, 21, 100, 200 days).</li>
+                        <li>Utilization of technical indicators such as SMA, EMA (5, 10, 20, 100, 200 days), MACD, HV,
+                            and STD.</li>
+                        <li>Assessment of seasonal patterns, weather conditions, and global demand-supply dynamics.</li>
+                    </ul>
+                </div>
+                <!-- Influencing Factors -->
+                <div class="section">
+                    <h2>Influencing Factors</h2>
+                    <ul>
+                        <li>Weather Conditions: Crop yields heavily influenced by weather patterns (temperature,
+                            rainfall, etc.).</li>
+                        <li>Global Demand: Affected by textile industry demand, international trade policies, and
+                            consumer preferences.</li>
+                        <li>Supply Chain: Factors like planting decisions, harvesting, and crop diseases impact supply
+                            levels.</li>
+                        <li>Economic Indicators: Sensitivity to economic growth, currency fluctuations, and global trade
+                            trends.</li>
+                    </ul>
+                </div>
+                <!-- Market Trends and Dynamics -->
+                <div class="section">
+                    <h2>Market Trends and Dynamics</h2>
+                    <ul>
+                        <li>Cotton prices affected by global economic conditions, specifically textile manufacturing and
+                            apparel demand.</li>
+                        <li>Government Policies: Subsidies, tariffs, and trade agreements impacting cotton prices.</li>
+                        <li>Industry Innovations: Technological advancements affecting production, processing, and usage
+                            trends.</li>
+                    </ul>
+                </div>
+                <!-- Correlation of Cotton -->
+                <div class="section">
+                    <h2>Correlation of Cotton</h2>
+                    <ul>
+                        <li>Inter-Commodity Correlations:
+                            <ul>
+                                <li>Analysis of how cotton price changes correlate with other commodities in the
+                                    dataset.</li>
+                                <li>Identification of correlations indicating commodities moving together or inversely
+                                    due to shared market drivers.</li>
+                            </ul>
+                        </li>
+                        <li>Correlation with Economic Indicators:
+                            <ul>
+                                <li>Assessment of correlations between cotton prices and economic indicators like Bond
+                                    Yields and the Dollar Index.</li>
+                                <li>Understanding how economic factors influence cotton prices and vice versa.</li>
+                            </ul>
+                        </li>
+                        <li>Cross-Market Correlations:
+                            <ul>
+                                <li>Exploration of correlations between cotton and broader market indices or sectors.
+                                </li>
+                                <li>Understanding how shifts in broader markets affect cotton prices and how cotton
+                                    price changes might impact other sectors.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="img">
+        <img src="/picture/15.png" alt="error">
+
+    </div>
+    </div>
+
+    <br><br>
+    <!-- Summary of BOND_10Y -->
+    <div class="gold-summary">
+        <h1>Summary of BOND_10Y</h1>
+        <div class="summary-container">
+            <!-- Economic Indicator -->
+            <div class="section">
+                <h2>Economic Indicator</h2>
+                <ul>
+                    <li>Represents the yield on U.S. Treasury securities with a 10-year maturity.</li>
+                    <li>Considered a benchmark for long-term interest rates and a key indicator of market sentiment
+                        regarding future economic conditions.</li>
+                </ul>
+            </div>
+            <!-- Impact on Commodities -->
+            <div class="section">
+                <h2>Impact on Commodities</h2>
+                <ul>
+                    <li>Inverse relationship with bond prices: When yields rise, bond prices fall, affecting borrowing
+                        costs and investment decisions across asset classes, including commodities.</li>
+                    <li>Higher bond yields may indicate expectations of increased inflation or stronger economic growth,
+                        impacting commodity prices.</li>
+                </ul>
+            </div>
+            <!-- Market Influence -->
+            <div class="section">
+                <h2>Market Influence</h2>
+                <ul>
+                    <li>Affects investor sentiment and risk appetite: Rising yields might attract investors away from
+                        commodities to bonds, impacting commodity demand and prices.</li>
+                    <li>Strong correlation with equity markets: Higher bond yields might lead to lower stock prices,
+                        influencing commodity investments.</li>
+                </ul>
+            </div>
+            <!-- Correlations of BOND_10Y with Commodities -->
+            <div class="section">
+                <h2>Correlations of BOND_10Y with Commodities</h2>
+                <ul>
+                    <li>Inverse Correlation with Gold:
+                        <ul>
+                            <li>Generally, gold prices move inversely to bond yields. Higher bond yields can reduce the
+                                attractiveness of non-interest-bearing assets like gold.</li>
+                        </ul>
+                    </li>
+                    <li>Impact on Industrial Commodities (Copper, Aluminum, etc.):
+                        <ul>
+                            <li>Inverse relationship: Higher bond yields might indicate higher borrowing costs,
+                                potentially slowing down industrial activities, affecting demand for industrial
+                                commodities.</li>
+                        </ul>
+                    </li>
+                    <li>Effect on Agricultural Commodities:
+                        <ul>
+                            <li>Impact on production costs: Higher bond yields might lead to higher borrowing costs for
+                                farmers, affecting planting decisions and production costs for agricultural commodities.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Currency Impact (Dollar Index):
+                        <ul>
+                            <li>Moderate correlation: Rising bond yields can strengthen the dollar, impacting commodity
+                                prices as commodities are priced in dollars.</li>
+                        </ul>
+                    </li>
+                    <li>Influence on Energy Commodities (WTI Crude, Natural Gas):
+                        <ul>
+                            <li>Indirect effect: Changes in bond yields may influence global economic growth prospects,
+                                impacting energy demand and subsequently affecting energy commodity prices.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="img">
+            <img src="/picture/bond.png" alt="error">
+
+        </div>
+
+    </div>
+
+
+
+    <br><br>
+    <!-- Summary of Dollar Index -->
+    <div class="gold-summary">
+        <h1>Summary of Dollar Index</h1>
+        <div class="summary-container">
+            <!-- Introduction -->
+            <!-- <div class="section">
+                <h2>Introduction</h2>
+                <p>The Dollar Index (DXY) measures the value of the U.S. dollar relative to a basket of major foreign
+                    currencies, offering insights into its strength or weakness against these currencies.</p>
+                <p>The index is weighted against currencies like Euro (EUR), Japanese Yen (JPY), British Pound (GBP),
+                    Canadian Dollar (CAD), Swedish Krona (SEK), and Swiss Franc (CHF).</p>
+            </div> -->
+            <!-- Factors Influencing Dollar Index -->
+            <div class="section">
+                <h2>Factors Influencing Dollar Index</h2>
+                <ul>
+                    <li>Interest Rates: Higher interest rates attract more foreign investment, strengthening the dollar.
+                    </li>
+                    <li>Economic Data: Positive indicators like GDP growth, employment rates, and consumer spending can
+                        bolster the dollar.</li>
+                    <li>Geopolitical Stability: Political uncertainty may lead to a flight to safety, increasing demand
+                        for the dollar.</li>
+                    <li>Trade Balance: A trade surplus tends to strengthen the dollar, while a deficit can weaken it.
+                    </li>
+                </ul>
+            </div>
+            <!-- Impact on Commodities -->
+            <div class="section">
+                <h2>Impact on Commodities</h2>
+                <ul>
+                    <li>Inverse Relationship: The Dollar Index often has an inverse relationship with commodity prices.
+                        A stronger dollar can reduce demand and cause prices to fall.</li>
+                    <li>Commodity Hedge: Commodities like gold often act as a hedge against a weakening dollar.</li>
+                </ul>
+            </div>
+            <!-- Correlation with Other Commodities -->
+            <div class="section">
+                <h2>Correlation with Other Commodities</h2>
+                <ul>
+                    <li>Inverse Correlation with Commodities: Commodities priced in dollars tend to have an inverse
+                        relationship with the Dollar Index. When the dollar strengthens, commodity prices in dollar
+                        terms may decrease.</li>
+                    <li>Sensitivity of Commodities to Dollar Index:
+                        <ul>
+                            <li>Gold: Strong inverse correlation with a weaker dollar often leading to increased gold
+                                prices.</li>
+                            <li>Oil: Dollar Index strength impacts oil prices; a stronger dollar tends to lower oil
+                                prices for buyers using other currencies.</li>
+                            <li>Other Commodities: Agricultural products and metals might exhibit some sensitivity to
+                                Dollar Index changes due to global pricing in dollars.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Investor Behavior -->
+            <!-- <div class="section">
+                <h2>Investor Behavior</h2>
+                <p>Investors closely monitor the Dollar Index when making commodity investment decisions as its changes
+                    significantly impact the attractiveness of commodities as investments.</p>
+            </div> -->
+   
+        </div>
+        <div class="img">
+            <img src="/picture/dollar index.png" alt="error">
+
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    </div>
+
 
     <script src="Prediction-script.js"></script>
 </body>
