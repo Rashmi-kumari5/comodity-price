@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price Prediction</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Commodity Prediction</title>
+    <link rel="stylesheet" href="Prediction-style.css">
 </head>
+
 <body>
     <div class="navbarr">
         <div class="logo">
@@ -23,5 +25,42 @@
       
           </div>
       </div>
+      
+    <div class="container">
+        <h1>Commodity Prediction Form</h1>
+        <form id="predictionForm">
+            <div class="input-group">
+                <label for="commodityName">Commodity Name:</label>
+                <input type="text" id="commodityName" name="commodityName" required>
+            </div>
+            <div class="input-group">
+                <label for="timePeriod">Time Period:</label>
+                <select id="timePeriod" name="timePeriod">
+                  <option value="" hidden>Select Time Period</option>
+                    <option value="6 months">6 Months</option>
+                    <option value="1 year">1 Year</option>
+                    <option value="5 years">5 Years</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="modelNo">Model Number</label>
+                <select id="modelNo" name="modelNo"> 
+                  <option value="" hidden>Select Model Number</option>
+                    <option value="1">Model 1</option>
+                    <option value="2">Model 2</option>
+                    <option value="3">Model 3</option>
+                    <option value="4">Model 4</option>
+                </select>
+            </div>
+            <br>
+            <div class="button-group">
+              <button type="submit">Predict</button>
+              <button id="downloadButton">Download Data</button>
+          </div>
+        </form>
+    </div>
+
+    <script src="Prediction-script.js"></script>
 </body>
+
 </html>
