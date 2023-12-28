@@ -30,7 +30,25 @@
         <form id="predictionForm">
             <div class="input-group">
                 <label for="commodityName">Commodity Name:</label>
-                <input type="text" id="commodityName" name="commodityName" required>
+                <select name="type" id="type_select">
+                  <option value="select" hidden>select</option>
+                  <option value="NATURAL">NATURAL GAS</option>
+                  <option value="GOLD">GOLD</option>
+                  <option value="WTI">WTI CRUDE</option>
+                  <option value="BRENT">BRENT CRUDE</option>
+                  <option value="SOYBEANS">SOYBEANS</option>
+                  <option value="CORN">CORN</option>
+                  <option value="COPPER">COPPER</option>
+                  <option value="ALUMINIUM">ALUMINIUM</option>
+                  <option value="ZINC">ZINC</option>
+                  <option value="NICKEL">NICKEL</option>
+                  <option value="WHEAT">WHEAT</option>
+                  <option value="SUGAR">SUGAR</option>
+                  <option value="COFFEE">COFFEE</option>
+                  <option value="COTTON">COTTON</option>
+                  <option value="BOND_10Y">BOND 10Y</option>
+                  <option value="Dollar_Index">Dollar Index</option>
+                </select>
             </div>
             <div class="input-group">
                 <label for="timePeriod">Time Period:</label>
@@ -50,6 +68,10 @@
                     <option value="2">Model 2</option>
                     <option value="3">Model 3</option>
                     <option value="4">Model 4</option>
+                    <option value="5">Model 5</option>
+                    <option value="6">Model 6</option>
+                    <option value="7">Model 7</option>
+                    <option value="8">Model 8</option>
                 </select>
             </div>
             <br>
@@ -71,7 +93,7 @@
         </div>
         <br>
         <br>
-        <div class="gold">
+        <div class="GOLD commodity">
             <div class="gold-summary">
                 <h1>Gold Insights</h1>
 
@@ -128,11 +150,7 @@
             </div>
         </div>
 
-
-        <br>
-        <br>
-
-        <div class="natural-gas">
+        <div class="NATURAL commodity">
             <div class="gold-summary">
                 <h1>Natural Gas Insights</h1>
                 <div class="summary-container">
@@ -203,7 +221,7 @@
         <br>
         <br>
 
-        <div class="wti">
+        <div class="WTI commodity">
             <div class="gold-summary">
                 <h1>WTI Crude Insights</h1>
                 <div class="summary-container">
@@ -267,10 +285,8 @@
         </div>
 
 
-        <br>
-        <br>
 
-        <div class="soybeans">
+        <div class="SOYBEANS commodity">
             <div class="gold-summary">
                 <h1>Soybeans Insights</h1>
                 <div class="summary-container">
@@ -329,10 +345,9 @@
         </div>
 
 
-        <br>
-        <br>
 
-        <div class="corn">
+
+        <div class="CORN commodity">
             <div class="gold-summary">
                 <h1>Summary of Corn</h1>
                 <div class="summary-container">
@@ -394,9 +409,9 @@
         </div>
 
 
-        <br><br>
 
-        <div class="zinc">
+
+        <div class="ZINC commodity">
             <div class="gold-summary">
                 <h1>Summary of Zinc</h1>
                 <div class="summary-container">
@@ -461,9 +476,8 @@
             </div>
         </div>
 
-        <br>
-        <br>
-        <div class="copper">
+
+        <div class="COPPER commodity">
             <div class="gold-summary">
                 <h1>Summary of Copper</h1>
                 <div class="summary-container">
@@ -521,8 +535,8 @@
             </div>
         </div>
 
-        <br><br>
-        <div class="aluminium">
+
+        <div class="ALUMINIUM commodity">
             <div class="gold-summary">
                 <h1>Summary of Aluminium</h1>
                 <div class="summary-container">
@@ -590,8 +604,9 @@
             </div>
         </div>
 
-        <br><br>
-        <div class="nickel">
+        
+        
+        <div class="NICKEL commodity">
             <div class="gold-summary">
                 <h1>Summary of Nickel</h1>
                 <div class="summary-container">
@@ -641,10 +656,11 @@
             </div>
         </div>
 
-        <br><br>
+        
 
         <!-- Summary of Wheat -->
-        <div class="wheat">
+
+        <div class="WHEAT commodity">
             <div class="gold-summary">
                 <h1>Summary of Wheat</h1>
                 <div class="summary-container">
@@ -741,9 +757,9 @@
         </div>
 
 
-        <br><br>
+       
         <!-- Summary of Sugar -->
-        <div class="sugar">
+        <div class="SUGAR commodity">
             <div class="sugar-summary">
                 <h1>Summary of Sugar</h1>
                 <div class="summary-container">
@@ -850,10 +866,7 @@
 
         </div>
 
-        <br><br>
-
-
-        <div class="coffee">
+        <div class="COFFEE commodity">
             <div class="gold-summary">
                 <h1>Summary of Coffee</h1>
                 <div class="summary-container">
@@ -937,9 +950,9 @@
             </div>
         </div>
 
-        <br><br>
+       
         <!-- Summary of Cotton -->
-        <div class="cotton">
+        <div class="COTTON commodity">
             <div class="gold-summary">
                 <h1>Summary of Cotton</h1>
                 <div class="summary-container">
@@ -1020,17 +1033,18 @@
 
                 </div>
             </div>
+            <div class="img">
+                <img src="/picture/15.png" alt="error">
+    
+            </div>
         </div>
-        <div class="img">
-            <img src="/picture/15.png" alt="error">
 
-        </div>
     </div>
     </div>
 
-    <br><br>
+   
     <!-- Summary of BOND_10Y -->
-    <div class="BOND_10Y">
+    <div class="BOND_10Y commodity">
         <div class="gold-summary">
             <h1>Summary of BOND_10Y</h1>
             <div class="summary-container">
@@ -1119,10 +1133,9 @@
     </div>
 
 
-
-    <br><br>
+  
     <!-- Summary of Dollar Index -->
-    <div class="Dollar-Index">
+    <div class="Dollar_Index commodity">
 
 
         <div class="gold-summary">
@@ -1199,7 +1212,7 @@
             </div>
         </div>
     </div>
-    <br><br>
+
 
 
     </div>
