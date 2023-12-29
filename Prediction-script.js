@@ -21,19 +21,19 @@ function downloadData(data, filename) {
   }
   
   // Event listener for form submission
-  document.getElementById('predictionForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent form submission
-    const commodityName = document.getElementById('commodityName').value;
-    const timePeriod = document.getElementById('timePeriod').value;
-    const modelNo = document.getElementById('modelNo').value;
+  // document.getElementById('predictionForm').addEventListener('submit', function (e) {
+  //   e.preventDefault(); // Prevent form submission
+  //   const commodityName = document.getElementById('commodityName').value;
+  //   const timePeriod = document.getElementById('timePeriod').value;
+  //   const modelNo = document.getElementById('modelNo').value;
   
-    // Prepare the data array
-    const data = [commodityName, timePeriod, modelNo];
+  //   // Prepare the data array
+  //   const data = [commodityName, timePeriod, modelNo];
   
-    // You can perform prediction logic here instead of downloading the file
-    // For now, let's log the data to the console
-    console.log("Prediction Data:", data);
-  });
+  //   // You can perform prediction logic here instead of downloading the file
+  //   // For now, let's log the data to the console
+  //   console.log("Prediction Data:", data);
+  // });
   
   // Event listener for download button
   document.getElementById('downloadButton').addEventListener('click', function () {

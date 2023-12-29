@@ -200,3 +200,11 @@ p{
   }
 
   
+.graph h2{
+  margin:5%;
+}
+
+
+#myChart{
+  padding: 0 5% 10% 5%;
+}
