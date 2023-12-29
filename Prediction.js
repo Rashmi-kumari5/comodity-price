@@ -75,6 +75,9 @@ async function loadCSV(path, dataVar, timePeriod = 365) {
 
 function organizeData(csv, dataVar, timePeriod) {
   dataVar.labels = [];
+  dataVar.datasets.forEach((dataset) => {
+    dataset.data = [];
+  });
   data = csv.split('\n');
 
   data.forEach((row) => {
@@ -194,6 +197,8 @@ document
         { label: 'Predicted', data: predictedData.data },
       ],
     };
+
+    console.log(chartData)
 
     const config = {
       type: 'line',
