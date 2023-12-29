@@ -59,13 +59,13 @@ var finalData = {
 //     });
 // }
 
-async function loadCSV(path, dataVar) {
+async function loadCSV(path, dataVar, timePeriod = 365) {
   const csvFilePath = path;
 
   try {
     const response = await fetch(csvFilePath);
     const csvData = await response.text();
-    organizeData(csvData, dataVar);
+    organizeData(csvData, dataVar, timePeriod);
     return dataVar;
   } catch (error) {
     console.error('Error loading CSV:', error);
@@ -73,7 +73,8 @@ async function loadCSV(path, dataVar) {
   }
 }
 
-function organizeData(csv, dataVar) {
+function organizeData(csv, dataVar, timePeriod) {
+  dataVar.labels = [];
   data = csv.split('\n');
 
   data.forEach((row) => {
@@ -84,10 +85,13 @@ function organizeData(csv, dataVar) {
     splitRow = row.split(',');
 
     splitRow.forEach((item, index) => {
-      if (index === 0) {
-        dataVar.labels.push(item);
-      } else {
-        dataVar.datasets[index - 1].data.push(parseFloat(item));
+      const dateObj = parseDate(splitRow[0]);
+      if (isDateInTimePeriod(dateObj, timePeriod)) {
+        if (index === 0) {
+          dataVar.labels.push(item);
+        } else {
+          dataVar.datasets[index - 1].data.push(parseFloat(item));
+        }
       }
     });
   });
@@ -177,8 +181,8 @@ document
     const timePeriod = document.getElementById('timePeriod').value;
     const modelNo = document.getElementById('modelNo').value;
 
-    await loadCSV('./df.csv', allData);
-    await loadCSV(getModelFile(modelNo), modelData);
+    await loadCSV('./Actual.csv', allData, parseInt(timePeriod));
+    await loadCSV(getModelFile(modelNo), modelData, parseInt(timePeriod));
 
     const normalData = getDataForLabel(type, allData);
     const predictedData = getDataForLabel(type, modelData);
@@ -221,6 +225,17 @@ document
       const myChart = new Chart(ctx, config);
       chart = myChart;
     }
-
-    // myChart.update();
   });
+
+function parseDate(dateString) {
+  const [day, month, year] = dateString.split('-').map(Number);
+  return new Date(year, month - 1, day);
+}
+
+function isDateInTimePeriod(date, timePeriod) {
+  const today = new Date();
+  const startDate = new Date(today);
+  startDate.setDate(today.getDate() - timePeriod);
+
+  return date >= startDate && date <= today;
+}
