@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Commodity Prediction</title>
     <link rel="stylesheet" href="Prediction-style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -65,14 +66,14 @@
                 <label for="modelNo">Model Number</label>
                 <select id="modelNo" name="modelNo">
                     <option value="" hidden>Select Model Number</option>
-                    <option value="1">Model 1</option>
-                    <option value="2">Model 2</option>
-                    <option value="3">Model 3</option>
-                    <option value="4">Model 4</option>
-                    <option value="5">Model 5</option>
-                    <option value="6">Model 6</option>
-                    <option value="7">Model 7</option>
-                    <option value="8">Model 8</option>
+                    <option value="1">Decision Tree Regresion</option>
+                    <option value="2">K Neighbours</option>
+                    <option value="3">Linear</option>
+                    <option value="4">LSTM</option>
+                    <option value="5">SVM</option>
+                    <option value="6">Var Model</option>
+                    <option value="7">Varima</option>
+                    <option value="8">Varma</option>
                 </select>
             </div>
             <br>
@@ -1216,10 +1217,13 @@
 
 
 
-    </div>
+</div>
+<canvas id="myChart" width="800" height="400"></canvas>
+
 
 
     <script src="Prediction-script.js"></script>
+    <script src="./Prediction.js"></script>
 </body>
 
 </html>
