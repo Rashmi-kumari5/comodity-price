@@ -36,16 +36,16 @@ function downloadData(data, filename) {
   // });
   
   // Event listener for download button
-  document.getElementById('downloadButton').addEventListener('click', function () {
-    const sampleData = [
-        ['Gold', '6 months', '1'],
-        ['Silver', '1 year', '3'],
-        ['Oil', '5 years', '2']
-    ];
+  // document.getElementById('downloadButton').addEventListener('click', function () {
+  //   const sampleData = [
+  //       ['Gold', '6 months', '1'],
+  //       ['Silver', '1 year', '3'],
+  //       ['Oil', '5 years', '2']
+  //   ];
   
-    // Download sample data as a CSV file
-    downloadData(sampleData.map(row => row.join(',')), 'sample_commodity_data.csv');
-  });
+  //   // Download sample data as a CSV file
+  //   downloadData(sampleData.map(row => row.join(',')), 'sample_commodity_data.csv');
+  // });
   
   
   // Function to clear form fields
@@ -90,16 +90,16 @@ function downloadData(data, filename) {
   });
   
   // Event listener for download button
-  document.getElementById('downloadButton').addEventListener('click', function () {
-    const sampleData = [
-        ['Gold', '6 months', '1'],
-        ['Silver', '1 year', '3'],
-        ['Oil', '5 years', '2']
-    ];
+  // document.getElementById('downloadButton').addEventListener('click', function () {
+  //   const sampleData = [
+  //       ['Gold', '6 months', '1'],
+  //       ['Silver', '1 year', '3'],
+  //       ['Oil', '5 years', '2']
+  //   ];
   
-    // Download sample data as a CSV file
-    downloadData(sampleData.map(row => row.join(',')), 'sample_commodity_data.csv');
-  });
+  //   // Download sample data as a CSV file
+  //   downloadData(sampleData.map(row => row.join(',')), 'sample_commodity_data.csv');
+  // });
   
 
 document.getElementById("type_select").addEventListener('change', function(event){
