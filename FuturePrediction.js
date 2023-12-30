@@ -1,6 +1,10 @@
-let chart;
+let chartFuture;
+const headings = document.getElementsByClassName('graph');
+headings[0].style.display = 'none';
+headings[1].style.display = 'none';
+document.getElementsByClassName('ci')[0].style.display = 'none';
 
-var allData = {
+var allDataFuture = {
   labels: [],
   datasets: [
     { label: 'NATURAL GAS', data: [] },
@@ -22,79 +26,55 @@ var allData = {
   ],
 };
 
-var modelData = {
-  labels: [],
-  datasets: [
-    { label: 'NATURAL GAS', data: [] },
-    { label: 'GOLD', data: [] },
-    { label: 'WTI CRUDE', data: [] },
-    { label: 'BRENT CRUDE', data: [] },
-    { label: 'SOYBEANS', data: [] },
-    { label: 'CORN', data: [] },
-    { label: 'COPPER', data: [] },
-    { label: 'ALUMINIUM', data: [] },
-    { label: 'ZINC', data: [] },
-    { label: 'NICKEL', data: [] },
-    { label: 'WHEAT', data: [] },
-    { label: 'SUGAR', data: [] },
-    { label: 'COFFEE', data: [] },
-    { label: 'COTTON', data: [] },
-    { label: 'BOND 10Y', data: [] },
-    { label: 'Dollar Index', data: [] },
-  ],
-};
-
-var finalData = {
-  labels: allData.labels,
+var finalDataFuture = {
+  labels: allDataFuture.labels,
   datasets: [{ label: 'NATURAL GAS', data: [] }],
 };
 
-// async function loadCSV(path, dataVar) {
-//   const csvFilePath = path;
-
-//   await fetch(csvFilePath)
-//     .then((response) => response.text())
-//     .then((response) => {
-//       organizeData(response, dataVar);
-//     });
-// }
-
-async function loadCSV(path, dataVar, timePeriod = 365) {
+function loadCSVFuture(path, dataVar) {
   const csvFilePath = path;
 
-  try {
-    const response = await fetch(csvFilePath);
-    const csvData = await response.text();
-    organizeData(csvData, dataVar, timePeriod);
-    return dataVar;
-  } catch (error) {
-    console.error('Error loading CSV:', error);
-    throw error; // Re-throw the error to be caught by the caller if needed.
-  }
+  fetch(csvFilePath)
+    .then((response) => response.text())
+    .then((response) => {
+      organizeDataFuture(response, dataVar);
+    });
 }
 
-function organizeData(csv, dataVar, timePeriod) {
-  dataVar.labels = [];
-  dataVar.datasets.forEach((dataset) => {
-    dataset.data = [];
-  });
+loadCSVFuture('./Svm.csv', allDataFuture);
+
+// async function loadCSV(path, dataVar, timePeriod = 365) {
+//   const csvFilePath = path;
+
+//   try {
+//     const response = await fetch(csvFilePath);
+//     const csvData = await response.text();
+//     organizeData(csvData, dataVar, timePeriod);
+//     return dataVar;
+//   } catch (error) {
+//     console.error('Error loading CSV:', error);
+//     throw error; // Re-throw the error to be caught by the caller if needed.
+//   }
+// }
+
+function organizeDataFuture(csv, dataVar, timePeriod) {
+  //   dataVar.labels = [];
+  //   dataVar.datasets.forEach((dataset) => {
+  //     dataset.data = [];
+  //   });
   data = csv.split('\n');
 
   data.forEach((row) => {
     if (!row) {
       return;
     }
-
     splitRow = row.split(',');
 
     splitRow.forEach((item, index) => {
-      const dateObj = parseDate(splitRow[0]);
-      if (isDateInTimePeriod(dateObj, timePeriod)) {
-        if (index === 0) {
-          dataVar.labels.push(item);
-        } else {
-          dataVar.datasets[index - 1].data.push(parseFloat(item));
-        }
+      if (index === 0) {
+        dataVar.labels.push(item);
+      } else {
+        dataVar.datasets[index - 1].data.push(parseFloat(item));
       }
     });
   });
@@ -139,7 +119,7 @@ function getDataForLabel(label, dataVar) {
   }
 }
 
-document.getElementById('myChart').style.display = 'none';
+document.getElementById('futureChart').style.display = 'none';
 // const myChart = new Chart(ctx, config);
 
 // var type_select = document.getElementById('type_select');
@@ -179,25 +159,18 @@ document
   .getElementById('predictionForm')
   .addEventListener('submit', async (event) => {
     event.preventDefault();
+    headings[0].style.display = 'block';
+    headings[1].style.display = 'block';
+document.getElementsByClassName('ci')[0].style.display = 'block';
 
     const type = document.getElementById('type_select').value;
-    const timePeriod = document.getElementById('timePeriod').value;
-    const modelNo = document.getElementById('modelNo').value;
 
-    await loadCSV('./Actual.csv', allData, parseInt(timePeriod));
-    await loadCSV(getModelFile(modelNo), modelData, parseInt(timePeriod));
-
-    const normalData = getDataForLabel(type, allData);
-    const predictedData = getDataForLabel(type, modelData);
+    const normalData = getDataForLabel(type, allDataFuture);
 
     chartData = {
-      labels: allData.labels,
-      datasets: [
-        { label: 'Actual', data: normalData.data },
-        { label: 'Predicted', data: predictedData.data },
-      ],
+      labels: allDataFuture.labels,
+      datasets: [{ label: 'Future Prediction', data: normalData.data }],
     };
-
 
     const config = {
       type: 'line',
@@ -218,32 +191,28 @@ document
       },
     };
 
-    document.getElementById('myChart').style.display = 'block';
-    const ctx = document.getElementById('myChart').getContext('2d');
+    document.getElementById('futureChart').style.display = 'block';
+    const ctx = document.getElementById('futureChart').getContext('2d');
 
-    if (chart) {
-      chart.destroy();
-      const myChart = new Chart(ctx, config);
-      chart = myChart;
+    if (chartFuture) {
+      chartFuture.destroy();
+      const futureChart = new Chart(ctx, config);
+      chartFuture = futureChart;
     } else {
-      const myChart = new Chart(ctx, config);
-      chart = myChart;
+      const futureChart = new Chart(ctx, config);
+      chartFuture = futureChart;
     }
   });
 
-function parseDate(dateString) {
-  const [day, month, year] = dateString.split('-').map(Number);
-  return new Date(year, month - 1, day);
-}
+// function parseDate(dateString) {
+//   const [day, month, year] = dateString.split('-').map(Number);
+//   return new Date(year, month - 1, day);
+// }
 
-function isDateInTimePeriod(date, timePeriod) {
-  const today = new Date();
-  const startDate = new Date(today);
-  startDate.setDate(today.getDate() - timePeriod);
+// function isDateInTimePeriod(date, timePeriod) {
+//   const today = new Date();
+//   const startDate = new Date(today);
+//   startDate.setDate(today.getDate() - timePeriod);
 
-  return date >= startDate && date <= today;
-}
-
-
-
-
+//   return date >= startDate && date <= today;
+// }
