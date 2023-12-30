@@ -111,3 +111,8 @@ document.getElementsByClassName(event.target.value)[0].style.display="block"
 
 })
 
+document
+  .getElementById('downloadButton')
+  .addEventListener('click', function () {
+    window.print();
+  });
