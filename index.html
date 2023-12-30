@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Commodity Price Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="navbarr">
+    <div class="logo">
+      <img src="picture/logo.png" alt="logo" />
+      <h3>
+        <p>Commodity Price Prediction</p>
+      </h3>
+    </div>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="Prediction.html">Prediction Page</a>
+      <a href="About.html">About Us</a>
+      <!-- <a href="admin.html">Admin Page</a> -->
+      <a href="contact.html">Contact Us</a>
+
+    </div>
+  </div>
+  <!-- <div class="background-container">
+        </div> -->
+
+  <div class="introduction">
+    <img src="/picture/img2.webp" alt="error" />
+    <div class="content">
+      <h1>Commodity Price <br />Prediction</h1>
+      <div class="sub-content">
+        Get accurate predictions for commodity prices with our advanced
+        algorithm. <br />
+        Stay ahead of the market trends and make informed decisions. <br />
+        <br />
+        <button class="button"
+          onclick="window.location.href = 'https://prevedere.com/introduciton-to-commodity-prices-prediction-2/';">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- <div class="news-t">
+    <h2><b><u>News</u></b></h2>
+  </div> -->
+
+  <div class="news-container">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div id="news" class="carousel-inner"></div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="news-t">
+    
+News plays a crucial role in commodity price prediction due to its ability to influence market sentiment, supply, demand, and geopolitical factors. Timely and relevant news impacts commodity markets, affecting prices significantly. Information on weather patterns, political events, economic policies, and global trade agreements can swiftly impact supply chains and demand dynamics, thereby affecting commodity prices.
+
+News acts as a catalyst for market movements, guiding investors and analysts in understanding trends and anticipating price fluctuations. For instance, geopolitical tensions might disrupt the supply of oil, leading to immediate price spikes.
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <b><label for="commodity">Select a Commodity:</label></b>
+  <select name="type" id="type_select">
+    <option value="select" hidden>select</option>
+    <option value="NATURAL GAS">NATURAL GAS</option>
+    <option value="GOLD">GOLD</option>
+    <option value="WTI CRUDE">WTI CRUDE</option>
+    <option value="BRENT CRUDE">BRENT CRUDE</option>
+    <option value="SOYBEANS">SOYBEANS</option>
+    <option value="CORN">CORN</option>
+    <option value="COPPER">COPPER</option>
+    <option value="ALUMINIUM">ALUMINIUM</option>
+    <option value="ZINC">ZINC</option>
+    <option value="NICKEL">NICKEL</option>
+    <option value="WHEAT">WHEAT</option>
+    <option value="SUGAR">SUGAR</option>
+    <option value="COFFEE">COFFEE</option>
+    <option value="COTTON">COTTON</option>
+    <option value="BOND_10Y">BOND 10Y</option>
+    <option value="Dollar_Index">Dollar Index</option>
+  </select>
+  <br>
+  <br> <br>
+  <br>
+  <canvas id="myChart" width="800" height="400"></canvas>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer class="flex-all-center">
+    <b>
+      <p>Copyright &copy; Commodity.com</p>
+    </b>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="chart.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
