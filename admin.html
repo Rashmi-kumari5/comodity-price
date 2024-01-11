@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <link rel="stylesheet" type="text/css" href="admin-styles.css">
+</head>
+<body>
+  <!-- <div class="header">
+    <h1>Admin Dashboard</h1>
+  </div> -->
+
+
+  <div class="navbarr">
+    <div class="logo">
+      <img src="picture/logo.png" alt="logo" />
+      <h3>
+        <p>Commodity Price Prediction</p>
+      </h3>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Prediction.html">Prediction Page</a>
+        <a href="About.html">About Us</a>
+        <a href="admin.html">Admin Page</a>
+        <a href="contact.html">Contact Us</a>
+  
+      </div>
+  </div>
+
+
+  <div class="container">
+    <div class="user-management">
+      <h2>User Management</h2>
+      <!-- Form for adding new users -->
+      <form id="addUserForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Add User</button>
+      </form>
+
+      <!-- Display existing users -->
+      <div id="existingUsers" class="user-list">
+        <!-- Existing users will be displayed here -->
+      </div>
+    </div>
+
+    <!-- <div class="input-group">
+      <label for="modelNo">Model Number</label>
+      <select id="modelNo" name="modelNo">
+        <option value="" hidden>Select Model Number</option>
+      </select>
+      <button id="addModelBtn">Add Model</button>
+      <button id="deleteModelBtn">Delete Model</button>
+    </div>
+  </div> -->
+
+  <script src="admin-script.js" defer></script>
+</body>
+</html>
